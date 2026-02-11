@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Beauty — Luxury Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900" style="font-family:'Inter',sans-serif">
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-rose-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-rose-500 text-2xl">&#10047;</span>
+        <span class="font-bold text-xl" style="font-family:'Playfair Display',serif">Bloom Beauty</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-rose-500 font-semibold text-sm transition">Home</a>
+        <a href="services.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Services</a>
+        <a href="gallery.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Gallery</a>
+        <a href="booking.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Booking</a>
+        
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="booking.html" class="hidden md:inline px-5 py-2 bg-rose-500 text-white font-semibold text-sm rounded-lg hover:bg-rose-600 transition">Book Now</a>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-rose-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-rose-100 bg-white">
+      <a href="index.html" class="block py-2 text-sm text-rose-500 font-semibold" onclick="closeMobileMenu()">Home</a>
+        <a href="services.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Services</a>
+        <a href="gallery.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Gallery</a>
+        <a href="booking.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Booking</a>
+        
+      <a href="booking.html" class="block mt-2 py-2 px-4 text-center bg-rose-500 text-white font-semibold text-sm rounded-lg" onclick="closeMobileMenu()">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-screen flex items-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1400&h=900&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+    <div class="relative px-6 max-w-3xl ml-auto mr-auto lg:ml-24">
+      <p class="text-rose-300 text-sm uppercase tracking-[0.3em] mb-4">Welcome to Bloom Beauty</p>
+      <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6" style="font-family:'Playfair Display',serif">Unleash Your<br>Inner Glow</h1>
+      <p class="text-gray-300 text-lg mb-8">Premium hair, skin, and nail treatments tailored just for you.</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="booking.html" class="px-8 py-4 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition">Book Appointment</a>
+        <a href="services.html" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 transition">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+      <p class="text-rose-500 text-sm uppercase tracking-widest mb-2">What We Offer</p>
+      <h2 class="text-4xl font-bold" style="font-family:'Playfair Display',serif">Our Services</h2>
+    </div>
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="services.html" class="group bg-rose-50 p-8 rounded-2xl text-center hover:bg-rose-100 transition">
+        <div class="text-4xl mb-4">&#9986;</div>
+        <h3 class="text-xl font-bold mb-2" style="font-family:'Playfair Display',serif">Haircuts & Styling</h3>
+        <p class="text-gray-500 text-sm mb-3">Expert cuts, coloring, and styling for all hair types.</p>
+        <span class="text-rose-500 font-semibold text-sm">From $45</span>
+      </a>
+      <a href="services.html" class="group bg-rose-50 p-8 rounded-2xl text-center hover:bg-rose-100 transition">
+        <div class="text-4xl mb-4">&#10024;</div>
+        <h3 class="text-xl font-bold mb-2" style="font-family:'Playfair Display',serif">Facials & Skincare</h3>
+        <p class="text-gray-500 text-sm mb-3">Revitalizing treatments for radiant, glowing skin.</p>
+        <span class="text-rose-500 font-semibold text-sm">From $60</span>
+      </a>
+      <a href="services.html" class="group bg-rose-50 p-8 rounded-2xl text-center hover:bg-rose-100 transition">
+        <div class="text-4xl mb-4">&#128133;</div>
+        <h3 class="text-xl font-bold mb-2" style="font-family:'Playfair Display',serif">Nail Art</h3>
+        <p class="text-gray-500 text-sm mb-3">Manicures, pedicures, and creative nail designs.</p>
+        <span class="text-rose-500 font-semibold text-sm">From $35</span>
+      </a>
+    </div>
+    <div class="text-center mt-12">
+      <a href="services.html" class="text-rose-500 font-semibold hover:text-rose-600 transition">View All Services &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-rose-50">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold" style="font-family:'Playfair Display',serif">What Our Clients Say</h2>
+    </div>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-yellow-400 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-gray-600 text-sm mb-4">"Absolutely love my new haircut! The team at Bloom Beauty is incredibly talented and welcoming."</p>
+        <div class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop&crop=face" class="w-10 h-10 rounded-full" alt="">
+          <div><p class="font-semibold text-sm">Sarah M.</p><p class="text-xs text-gray-400">Regular Client</p></div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-yellow-400 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-gray-600 text-sm mb-4">"The facial treatment was heavenly. My skin has never looked better. Highly recommend!"</p>
+        <div class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face" class="w-10 h-10 rounded-full" alt="">
+          <div><p class="font-semibold text-sm">Emily R.</p><p class="text-xs text-gray-400">New Client</p></div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-yellow-400 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="text-gray-600 text-sm mb-4">"Best nail art in town! Creative designs and the polish lasts for weeks. Definitely coming back."</p>
+        <div class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=40&h=40&fit=crop&crop=face" class="w-10 h-10 rounded-full" alt="">
+          <div><p class="font-semibold text-sm">Jessica L.</p><p class="text-xs text-gray-400">VIP Member</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-rose-950 text-rose-200 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <span class="text-white text-xl font-bold" style="font-family:'Playfair Display',serif">Bloom Beauty</span>
+        <p class="text-sm mt-2 text-rose-300">Where beauty meets elegance.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Hours</h4>
+        <p class="text-sm">Mon-Sat: 9:00 AM - 8:00 PM</p>
+        <p class="text-sm">Sunday: 10:00 AM - 6:00 PM</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Contact</h4>
+        <p class="text-sm">+1 (555) 987-6543</p>
+        <p class="text-sm">hello@bloombeauty.com</p>
+      </div>
+    </div>
+    <p class="text-center text-rose-800 text-xs mt-8">&copy; 2025 Bloom Beauty. All rights reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

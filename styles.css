@@ -1,0 +1,13 @@
+/* Bloom Beauty — Custom Styles */
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+
+.toast {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 9999;
+  background: #f43f5e; color: white; padding: 1rem 1.5rem;
+  border-radius: 0.75rem; font-weight: 600; font-size: 0.875rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: slideUp 0.3s ease, fadeOut 0.3s ease 2.5s forwards;
+}
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes fadeOut { to { opacity: 0; transform: translateY(-10px); } }

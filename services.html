@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Bloom Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900" style="font-family:'Inter',sans-serif">
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-rose-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-rose-500 text-2xl">&#10047;</span>
+        <span class="font-bold text-xl" style="font-family:'Playfair Display',serif">Bloom Beauty</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Home</a>
+        <a href="services.html" class="text-rose-500 font-semibold text-sm transition">Services</a>
+        <a href="gallery.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Gallery</a>
+        <a href="booking.html" class="text-gray-600 hover:text-gray-900 text-sm transition">Booking</a>
+        
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="booking.html" class="hidden md:inline px-5 py-2 bg-rose-500 text-white font-semibold text-sm rounded-lg hover:bg-rose-600 transition">Book Now</a>
+        <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-rose-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-rose-100 bg-white">
+      <a href="index.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Home</a>
+        <a href="services.html" class="block py-2 text-sm text-rose-500 font-semibold" onclick="closeMobileMenu()">Services</a>
+        <a href="gallery.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Gallery</a>
+        <a href="booking.html" class="block py-2 text-sm text-gray-600 hover:text-gray-900" onclick="closeMobileMenu()">Booking</a>
+        
+      <a href="booking.html" class="block mt-2 py-2 px-4 text-center bg-rose-500 text-white font-semibold text-sm rounded-lg" onclick="closeMobileMenu()">Book Now</a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-8 px-6 text-center">
+    <p class="text-rose-500 text-sm uppercase tracking-widest mb-2">Bloom Beauty</p>
+    <h1 class="text-5xl font-bold" style="font-family:'Playfair Display',serif">Our Services</h1>
+  </section>
+
+  <section class="py-12 px-6">
+    <div class="max-w-4xl mx-auto space-y-16">
+      <!-- Hair -->
+      <div>
+        <h2 class="text-2xl font-bold text-rose-500 mb-6 text-center" style="font-family:'Playfair Display',serif">&#9986; Hair</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Women's Haircut</h3><p class="text-gray-400 text-sm">Consultation, wash, cut & style</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$65</span><p class="text-xs text-gray-400">60 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Men's Haircut</h3><p class="text-gray-400 text-sm">Precision cut & style</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$45</span><p class="text-xs text-gray-400">45 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Full Color</h3><p class="text-gray-400 text-sm">All-over color with premium products</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$120</span><p class="text-xs text-gray-400">120 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Balayage / Highlights</h3><p class="text-gray-400 text-sm">Hand-painted natural highlights</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$180</span><p class="text-xs text-gray-400">150 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Blowout & Style</h3><p class="text-gray-400 text-sm">Wash and professional blowdry</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$40</span><p class="text-xs text-gray-400">30 min</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- Skin -->
+      <div>
+        <h2 class="text-2xl font-bold text-rose-500 mb-6 text-center" style="font-family:'Playfair Display',serif">&#10024; Skincare</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Classic Facial</h3><p class="text-gray-400 text-sm">Deep cleanse, exfoliation, mask</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$80</span><p class="text-xs text-gray-400">60 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Anti-Aging Facial</h3><p class="text-gray-400 text-sm">Collagen boost, firming treatment</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$120</span><p class="text-xs text-gray-400">75 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Hydra Glow Facial</h3><p class="text-gray-400 text-sm">Intense hydration for radiant skin</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$95</span><p class="text-xs text-gray-400">60 min</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- Nails -->
+      <div>
+        <h2 class="text-2xl font-bold text-rose-500 mb-6 text-center" style="font-family:'Playfair Display',serif">&#128133; Nails</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Classic Manicure</h3><p class="text-gray-400 text-sm">Shape, cuticle care, polish</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$35</span><p class="text-xs text-gray-400">30 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Gel Manicure</h3><p class="text-gray-400 text-sm">Long-lasting gel polish application</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$50</span><p class="text-xs text-gray-400">45 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Pedicure Deluxe</h3><p class="text-gray-400 text-sm">Soak, scrub, massage, polish</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$55</span><p class="text-xs text-gray-400">50 min</p></div>
+          </div>
+          <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+            <div><h3 class="font-semibold">Nail Art</h3><p class="text-gray-400 text-sm">Custom creative designs</p></div>
+            <div class="text-right shrink-0 ml-4"><span class="text-rose-500 font-bold">$15+</span><p class="text-xs text-gray-400">per nail</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="booking.html" class="px-8 py-4 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition inline-block">Book an Appointment</a>
+    </div>
+  </section>
+
+  <footer class="bg-rose-950 text-rose-200 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <span class="text-white text-xl font-bold" style="font-family:'Playfair Display',serif">Bloom Beauty</span>
+        <p class="text-sm mt-2 text-rose-300">Where beauty meets elegance.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Hours</h4>
+        <p class="text-sm">Mon-Sat: 9:00 AM - 8:00 PM</p>
+        <p class="text-sm">Sunday: 10:00 AM - 6:00 PM</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-2">Contact</h4>
+        <p class="text-sm">+1 (555) 987-6543</p>
+        <p class="text-sm">hello@bloombeauty.com</p>
+      </div>
+    </div>
+    <p class="text-center text-rose-800 text-xs mt-8">&copy; 2025 Bloom Beauty. All rights reserved.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
